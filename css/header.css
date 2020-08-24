@@ -1,0 +1,62 @@
+/* SECTION TOPBAR */
+
+.topbar {
+    background-color: #ff2a6b;
+    padding: 18px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+ul.topbar__social {
+    margin: 0 -10px;
+    display: flex;
+}
+
+ul.topbar__social > li {
+    padding: 0 15px;
+}
+
+ul.topbar__social a {
+    color: white;
+}
+
+p.topbar__account {
+    display: flex;
+    padding: 0 10px;
+}
+
+p.topbar__account > a {
+    color: white;
+}
+
+p.topbar__account > span {
+    color: white;
+    padding: 0 5px;
+}
+
+/* SECTION LOWER BAR */
+
+.lowerbar {
+    background-color: white;
+    padding: 18px 0;
+}
+
+.logo {
+    width: 125px;
+    height: auto;
+}
+
+.search_button {
+    display: inline-block;
+    background-color: #ff2a6b;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 15px 0;
+}
+
+ul.menu > li > a.active {
+    color: #ff2a6b;
+    font-weight: 700;
+}
