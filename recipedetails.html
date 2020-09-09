@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/recipedetails.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="stylesheet" href="css/Responsive/row.css">
+    <link rel="stylesheet" href="css/Responsive/container.css">
+    <link rel="stylesheet" href="css/Responsive/col.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-3">
+                        <ul class="topbar__social">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-3">
+                        <p class="topbar__account">
+                            <a href="#">Register</a>
+                            <span>/</span>
+                            <a href="#">Login</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lowerbar">
+            <div class="container">
+                <div class="lowerbar-content">
+                    <a class="lowerbar-content__logo" href="index.html"><img src="/images/logo.svg"
+                            alt="nordic-coder-logo"></a>
+
+                    <ul class="lowerbar-content__menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a class="active" href="recipedetails.html">Recipe Detail</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="lowerbar-content__search">
+                        <a class="search" href="#"><i class="fas fa-search"></i></a>
+                    </div>
+
+                    <input type="checkbox" name="nav-trigger" id="nav-trigger" class="nav-trigger">
+                    <label for="nav-trigger"><i class="fas fa-bars"></i></label>
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="recipedetails-banner"></div>
+
+        <section class="recipe-details">
+            <div class="container">
+                <div class="recipe-title col-12">
+                    <p>For Begginers</p>
+                    <h1>Lamb Chops with green peper sauce</h1>
+                    <span>May 15, 2018</span>
+                    <ul class="rating">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i id="fade" class="fas fa-star"></i></li>
+                    </ul>
+                </div>
+
+                <div class="recipe-information">
+                    <div class="ingredients row">
+                        <div class="ingredients__list col-12 col-sm-12 col-lg-5">
+                            <div class="recipes-time">
+                                <p>Prep: 15 mins</p>
+                                <p>Cook: 30 mins</p>
+                                <p>Yields: 8 Servings</p>
+                            </div>
+
+                            <h2>Ingredients</h2>
+                            <ul class="ingredients-checkbox">
+                                <li>
+                                    <div class="form-group">
+                                        <input class="tick" type="checkbox" name="ingredient" id="butter">
+                                        <label for="butter">4 Tbsp (57 gr) butter</label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="form-group">
+                                        <input class="tick" type="checkbox" name="ingredient" id="eggs">
+                                        <label for="eggs">2 large eggs</label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="form-group">
+                                        <input class="tick" type="checkbox" name="ingredient" id="yogurt">
+                                        <label for="yogurt">2 yogurt containers granulated sugar</label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="form-group">
+                                        <input class="tick" type="checkbox" name="ingredient" id="vanilla">
+                                        <label for="vanilla">1 vanilla or plain yogurt, 170g container</label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="form-group">
+                                        <input class="tick" type="checkbox" name="ingredient" id="flour">
+                                        <label for="flour">White flour</label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="form-group">
+                                        <input class="tick" type="checkbox" name="ingredient" id="milk">
+                                        <label for="milk">1.5 yogurt containers milk</label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="form-group">
+                                        <input class="tick" type="checkbox" name="ingredient" id="cinnamon">
+                                        <label for="cinnamon">1/4 tsp cinnamon</label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="form-group">
+                                        <input class="tick" type="checkbox" name="ingredient" id="berries">
+                                        <label for="berries">1 cup fresh blueberries</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ingredients__info col-12 col-lg-7">
+                            <ul>
+                                <li>
+                                    <div class="description">
+                                        <h3>01.</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
+                                            varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean
+                                            congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere
+                                            vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et
+                                            magni.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="description">
+                                        <h3>02.</h3>
+                                        <p>Sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse
+                                            potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
+                                            iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget
+                                            lobortis purus.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="description">
+                                        <h3>03.</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
+                                            varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean
+                                            congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere
+                                            vestibulum ipsum.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="description">
+                                        <h3>04.</h3>
+                                        <p>Sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse
+                                            potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
+                                            iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget
+                                            lobortis.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="description">
+                                        <h3>05.</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
+                                            varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean
+                                            congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere
+                                            vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et
+                                            magni.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__left col-12 col-sm-12 col-md-12 col-lg-4">
+                        <a href="#"><img src="images/logo.svg" alt="Nordic Coder logo"></a>
+
+                        <ul class="footer__social">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__right col-12 col-sm-12 col-md-12 col-lg-8">
+                        <ul class="footer-menu">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/recipes.html">Recipes</a></li>
+                            <li><a class="active" href="/recipedetails.html">Recipes Details</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+
+                        <p class="footer__text">Copyright © 2020 All rights reserved | This template is made with
+                            by 🐸<br><a class="colorlib" href="https://colorlib.com" target="_blank"> Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+</body>
+
+</html>

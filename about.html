@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Blog - About</title>
+    <title>About</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/index.css">
+
+    <link rel="stylesheet" href="/css/Responsive/col.css">
+    <link rel="stylesheet" href="/css/Responsive/container.css">
+    <link rel="stylesheet" href="/css/Responsive/row.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -24,7 +27,7 @@
         <section class="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-3">
                         <ul class="topbar__social">
                             <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -35,7 +38,7 @@
                         </ul>
                     </div>
 
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-3">
                         <p class="topbar__account">
                             <a href="#">Register</a>
                             <span>/</span>
@@ -48,30 +51,28 @@
 
         <section class="lowerbar">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <a href="/index.html">
-                            <img class="logo" src="/images/logo.svg" alt="Nordic Coder logo">
-                        </a>
+                <div class="lowerbar-content">
+                    <a class="lowerbar-content__logo" href="index.html"><img src="/images/logo.svg"
+                            alt="nordic-coder-logo"></a>
+
+                    <ul class="lowerbar-content__menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="recipedetails.html">Recipe Detail</a></li>
+                        <li><a class="active" href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="lowerbar-content__search">
+                        <a class="search" href="#"><i class="fas fa-search"></i></a>
                     </div>
 
-                    <div class="col">
-                        <ul class="menu">
-                            <li><a href="/index.html">Home</a></li>
-                            <li><a href="/recipes.html">Recipes</a></li>
-                            <li><a href="/recipedetails.html">Recipes Details</a></li>
-                            <li><a class="active" href="/about.html">About</a></li>
-                            <li><a href="/contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                    <input type="checkbox" name="nav-trigger" id="nav-trigger" class="nav-trigger">
+                    <label for="nav-trigger"><i class="fas fa-bars"></i></label>
 
-                    <div class="col">
-                        <a class="search_button" href="#"><i class="fas fa-search"></i></a>
-                    </div>
                 </div>
             </div>
         </section>
-
     </header>
 
     <main>
@@ -81,10 +82,10 @@
             </div>
         </section>
 
-        <section class="about_team">
+        <section class="about-team">
             <div class="container">
-                <div class="row">
-                    <div class="col w-50">
+                <div class="intro row">
+                    <div class="intro__content col-sm-12 col-md-12 col-lg-6">
                         <h2>About our great team</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium inventore corporis quis
                             nostrum a maxime. Soluta aliquid id aut, nemo excepturi dicta deleniti voluptas nulla
@@ -99,47 +100,39 @@
                         <div class="about-button">Read more</div>
                     </div>
 
-                    <div class="col w-50">
+                    <div class="intro__image col-sm-12 col-md-12 col-lg-6">
                         <a href="#"><img class="about_image" src="/images/about.jpg" alt="CEO"></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="fact_box">
+        <section class="fact-box">
             <div class="fact-wrap">
 
                 <div class="container">
 
                     <div class="row">
-                        <ul class="fact_row">
-                            <li>
-                                <div class="fact__info">
-                                    <img src="images/icon/1.png" alt="fact1">
-                                    <h3>1287</h3>
-                                    <p>Amazing Recipes</p>
-                                </div>
+                        <ul class="fact">
+                            <li class="col-sm-6 col-md-6 col-lg-3">
+                                <img src="images/icon/1.png" alt="fact1">
+                                <h3>1287</h3>
+                                <p>Amazing Recipes</p>
                             </li>
-                            <li>
-                                <div class="fact__info">
-                                    <img src="/images/icon/2.png" alt="fact2">
-                                    <h3>25</h3>
-                                    <p>Wine Pairing</p>
-                                </div>
+                            <li class="col-sm-6 col-md-6 col-lg-3">
+                                <img src="/images/icon/2.png" alt="fact2">
+                                <h3>25</h3>
+                                <p>Wine Pairing</p>
                             </li>
-                            <li>
-                                <div class="fact__info">
-                                    <img src="images/icon/3.png" alt="fact3">
-                                    <h3>471</h3>
-                                    <p>Meat Recipes</p>
-                                </div>
+                            <li class="col-sm-6 col-md-6 col-lg-3">
+                                <img src="images/icon/3.png" alt="fact3">
+                                <h3>471</h3>
+                                <p>Meat Recipes</p>
                             </li>
-                            <li>
-                                <div class="fact__info">
-                                    <img src="images/icon/4.png" alt="fact4">
-                                    <h3>326</h3>
-                                    <p>Dessert Recipes</p>
-                                </div>
+                            <li class="col-sm-6 col-md-6 col-lg-3">
+                                <img src="images/icon/4.png" alt="fact4">
+                                <h3>326</h3>
+                                <p>Dessert Recipes</p>
                             </li>
                         </ul>
                     </div>
@@ -157,26 +150,22 @@
         <section class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="footer__logo">
-                            <a href="#"><img src="images/logo.svg" alt="Nordic Coder logo"></a>
-                        </div>
+                    <div class="footer__left col-12 col-sm-12 col-md-12 col-lg-4">
+                        <a href="#"><img src="images/logo.svg" alt="Nordic Coder logo"></a>
 
-                        <div class="social-icon">
-                            <ul class="footer__social">
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
+                        <ul class="footer__social">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
                     </div>
 
 
-                    <div class="col">
-                        <ul class="menu">
+                    <div class="footer__right col-12 col-sm-12 col-md-12 col-lg-8">
+                        <ul class="footer-menu">
                             <li><a href="/index.html">Home</a></li>
                             <li><a href="/recipes.html">Recipes</a></li>
                             <li><a href="/recipedetails.html">Recipes Details</a></li>
@@ -184,9 +173,8 @@
                             <li><a href="/contact.html">Contact</a></li>
                         </ul>
 
-                        <p class="footer__text">Copyright ©️ 2020 All rights reserved | This template is made by 🙋‍♀️
-                        </p>
-                        <a class="colorlib" href="https://colorlib.com">Colorlib</a>
+                        <p class="footer__text">Copyright © 2020 All rights reserved | This template is made with
+                            by 🐸<br><a class="colorlib" href="https://colorlib.com" target="_blank"> Colorlib</a></p>
                     </div>
                 </div>
             </div>

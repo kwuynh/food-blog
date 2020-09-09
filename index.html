@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/Responsive/container.css">
+    <link rel="stylesheet" href="/css/Responsive/row.css">
+    <link rel="stylesheet" href="/css/Responsive/col.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -22,7 +25,7 @@
         <section class="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-3">
                         <ul class="topbar__social">
                             <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -33,7 +36,7 @@
                         </ul>
                     </div>
 
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-3">
                         <p class="topbar__account">
                             <a href="#">Register</a>
                             <span>/</span>
@@ -46,26 +49,25 @@
 
         <section class="lowerbar">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <a href="/index.html">
-                            <img class="logo" src="/images/logo.svg" alt="Nordic Coder logo">
-                        </a>
+                <div class="lowerbar-content">
+                    <a class="lowerbar-content__logo" href="index.html"><img src="/images/logo.svg"
+                            alt="nordic-coder-logo"></a>
+
+                    <ul class="lowerbar-content__menu">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="recipedetails.html">Recipe Detail</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="lowerbar-content__search">
+                        <a class="search" href="#"><i class="fas fa-search"></i></a>
                     </div>
 
-                    <div class="col">
-                        <ul class="menu">
-                            <li><a class="active" href="/index.html">Home</a></li>
-                            <li><a href="/recipes.html">Recipes</a></li>
-                            <li><a href="/recipedetails.html">Recipes Details</a></li>
-                            <li><a href="/about.html">About</a></li>
-                            <li><a href="/contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                    <input type="checkbox" name="nav-trigger" id="nav-trigger" class="nav-trigger">
+                    <label for="nav-trigger"><i class="fas fa-bars"></i></label>
 
-                    <div class="col">
-                        <a class="search_button" href="#"><i class="fas fa-search"></i></a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -87,8 +89,8 @@
             <div class="container">
                 <div class="slider"></div>
                 <h4>Latest Recipes</h4>
-                <ul class="recipes__list">
-                    <li>
+                <ul class="recipes__list row">
+                    <li class="col-12 col-md-6 col-lg-4">
                         <img src="images/recipes/1.jpg" alt="recipe">
 
                         <div class="recipes-info">
@@ -103,7 +105,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="col-12 col-md-6 col-lg-4">
                         <img src="images/recipes/2.jpg" alt="recipe">
 
                         <div class="recipes-info">
@@ -118,7 +120,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="col-12 col-md-6 col-lg-4">
                         <img src="images/recipes/3.jpg" alt="recipe">
 
                         <div class="recipes-info">
@@ -133,7 +135,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="col-12 col-md-6 col-lg-4">
                         <img src="images/recipes/4.jpg" alt="recipe">
 
                         <div class="recipes-info">
@@ -148,7 +150,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="col-12 col-md-6 col-lg-4">
                         <img src="images/recipes/5.jpg" alt="recipe">
 
                         <div class="recipes-info">
@@ -163,7 +165,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="col-12 col-md-6 col-lg-4">
                         <img src="images/recipes/6.jpg" alt="recipe">
 
                         <div class="recipes-info">
@@ -184,7 +186,7 @@
         <section class="rating-list">
             <div class="container">
                 <div class="row">
-                    <div class="top-rated">
+                    <div class="top-rated col-12 col-sm-12 col-md-6 col-lg-3">
                         <div class="slider"></div>
                         <h4>Top rated recipes</h4>
                         <ul class="top-rated__list">
@@ -261,7 +263,7 @@
                         </ul>
                     </div>
 
-                    <div class="most-liked">
+                    <div class="most-liked col-12 col-md-6 col-lg-3">
                         <div class="slider"></div>
                         <h4>Most liked recipes</h4>
                         <ul class="most-liked__list">
@@ -338,7 +340,7 @@
                         </ul>
                     </div>
 
-                    <div class="review">
+                    <div class="review col-12 col-sm-12 col-lg-4">
                         <img src="images/blog/1.jpg" alt="blog">
 
                         <div class="review__date">
@@ -363,8 +365,8 @@
         <section class="author-rated">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="review-items">
+                    <div class="bottom-review col-12 col-md-12 col-md-12 col-lg-6">
+                        <div class="review-items-left">
                             <div class="date-tag">
                                 <p>May 04, 2020</p>
                             </div>
@@ -394,8 +396,8 @@
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="review-items">
+                    <div class="bottom-review col-12 col-md-12 col-md-12 col-lg-6">
+                        <div class="review-items-right">
                             <div class="date-tag">
                                 <p>May 04, 2020</p>
                             </div>
@@ -433,26 +435,22 @@
         <section class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="footer__logo">
-                            <a href="#"><img src="images/logo.svg" alt="Nordic Coder logo"></a>
-                        </div>
+                    <div class="footer__left col-12 col-sm-12 col-md-12 col-lg-4">
+                        <a href="#"><img src="images/logo.svg" alt="Nordic Coder logo"></a>
 
-                        <div class="social-icon">
-                            <ul class="footer__social">
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
+                        <ul class="footer__social">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
                     </div>
 
 
-                    <div class="col">
-                        <ul class="menu">
+                    <div class="footer__right col-12 col-sm-12 col-md-12 col-lg-8">
+                        <ul class="footer-menu">
                             <li><a class="active" href="/index.html">Home</a></li>
                             <li><a href="/recipes.html">Recipes</a></li>
                             <li><a href="/recipedetails.html">Recipes Details</a></li>
@@ -460,13 +458,13 @@
                             <li><a href="/contact.html">Contact</a></li>
                         </ul>
 
-                        <p class="footer__text">Copyright ©️ 2020 All rights reserved | This template is made by 🙋‍♀️
-                        </p>
-                        <a class="colorlib" href="https://colorlib.com">Colorlib</a>
+                        <p class="footer__text">Copyright © 2020 All rights reserved | This template is made with
+                            by 🐸<br><a class="colorlib" href="https://colorlib.com" target="_blank"> Colorlib</a></p>
                     </div>
                 </div>
             </div>
         </section>
+
     </footer>
 </body>
 
