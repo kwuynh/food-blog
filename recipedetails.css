@@ -1,0 +1,240 @@
+.recipedetails-banner {
+    background-image: url(/images/recipes/single-big.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    margin-bottom: 80px;
+}
+
+/* RECIPE */
+.recipe-title {
+    overflow: hidden;
+}
+
+.recipe-title > h1 {
+    margin-bottom: 5px;
+    color: #474747;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.recipe-title > p {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 20px 30px 20px 20px;
+    background-color: #ff2a6b;
+    color: white;
+    font-weight: 400;
+
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.recipe-title > span {
+    color: #a4a4a4;
+    font-size: 14px;
+}
+
+.rating {
+    margin: 30px 0;
+    color: #fbb710;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.rating i {
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+#fade {
+    color: #e0e3e4;
+}
+
+.recipe-information {
+    margin-bottom: 100px;
+}
+
+.ingredients {
+    overflow: hidden;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.recipes-time {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 70px;
+    padding: 15px 200px 15px 30px;
+    background-color: #ff2a6b;
+
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.recipes-time p {
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.ingredients__list {
+    background-color: #eff3f7;
+}
+
+.ingredients__list > h2 {
+    color: #474747;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* FORM */
+ul.ingredients-checkbox {
+    margin-bottom: 70px;
+}
+
+.form-group {
+    padding-top: 40px;
+    padding-left: 70px;
+}
+
+.tick {
+    display: none;
+}
+
+.tick + label {
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+    color: #474747;
+}
+
+.tick + label::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: -2px;
+
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #a4a4a4;
+    background-color: white;
+}
+
+.tick:checked + label::before {
+    background-color: #ff2a6b;
+}
+
+.tick:checked + label::after {
+    content: "";
+    position: absolute;
+    left: -12px;
+    bottom: 10px;
+
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+
+    transform: rotate(-45deg);
+}
+
+.ingredients__info {
+    padding-left: 50px;
+}
+
+.description {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.description > h3 {
+    display: inline-block;
+    color: #474747;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.description > p {
+    display: inline-block;
+    padding-top: 18px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #838383;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.1;
+}
+
+@media only screen and (max-width: 576px) {
+    .ingredients__info {
+        margin-top: 70px;
+        padding: 0 5px;
+    }
+
+    .recipes-time {
+        padding: 15px 170px 15px 30px;
+
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    }
+
+    ul.ingredients-checkbox {
+        margin-bottom: 70px;
+    }
+
+    .tick + label {
+        font-size: 13px;
+    }
+
+    .form-group {
+        padding-left: 40px;
+    }
+
+    .recipe-title > h1 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+    .ingredients__info {
+        margin-top: 50px;
+        padding: 0 5px;
+    }
+
+    .recipes-time {
+        padding: 30px 400px 30px 30px;
+
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    }
+
+    .recipes-time p {
+        color: white;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    ul.ingredients-checkbox {
+        margin-bottom: 70px;
+    }
+
+    .form-group {
+        padding-left: 70px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .ingredients__list {
+        height: 100%;
+    }
+
+    .recipe-title {
+        margin-left: -15px;
+    }
+}

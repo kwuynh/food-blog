@@ -1,0 +1,486 @@
+/* BANNER */
+
+.homepage-banner {
+    margin-bottom: 70px;
+
+    background-image: url(/images/slider-bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    height: 700px;
+}
+
+.banner-title {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.homepage-banner h1 {
+    position: relative;
+    z-index: auto;
+    margin-top: 250px;
+
+    font-size: 70px;
+    color: white;
+    background-color: #ff2a6b;
+    padding: 10px 40px;
+    border-radius: 5px;
+
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+
+    transform: rotate(3deg);
+
+    animation-name: titleZoom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+
+.homepage-banner h2 {
+    position: relative;
+    z-index: auto;
+    margin-top: 5px;
+
+    font-size: 50px;
+    color: white;
+    background-color: #fdc856;
+    padding: 10px 30px;
+    border-radius: 5px;
+
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+
+    animation-name: headerZoom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    animation-delay: 0.25s;
+}
+
+.homepage-banner h3 {
+    position: relative;
+    z-index: auto;
+    margin-top: 5px;
+
+    font-size: 40px;
+    color: white;
+    background-color: #bdde64;
+    padding: 10px 30px;
+    border-radius: 5px;
+
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+
+    animation-name: headerZoom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+}
+
+@keyframes titleZoom {
+    from {
+        transform: rotate(0) scale(0.3);
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        transform: rotate(3deg) scale(1);
+    }
+}
+
+@keyframes headerZoom {
+    from {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .homepage-banner h1 {
+        font-size: 33px;
+        padding: 10px 20px;
+    }
+
+    .homepage-banner h2 {
+        font-size: 27px;
+        padding: 10px 20px;
+    }
+
+    .homepage-banner h3 {
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+}
+
+/* LATEST RECIPES */
+
+h4 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #474744;
+}
+
+ul.recipes__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    margin-right: -15px;
+    margin-bottom: 60px;
+}
+
+ul.recipes__list img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul.recipes__list > li {
+    position: relative;
+
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+ul.recipes__list > li > img {
+    vertical-align: middle;
+}
+
+.recipes-info {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+
+    background-color: #ff2a6b;
+    color: white;
+    padding: 20px 50px 20px 30px;
+
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.recipes-info > h5 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.rating {
+    color: #fbb710;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.rating i {
+    font-size: 12px;
+    padding-right: 3px;
+}
+
+#fade {
+    color: #e0e3e4;
+}
+
+.rating-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #f4f7fb;
+}
+
+/* TOP RATED & MOST LIKED */
+
+.top-rated,
+.most-liked,
+.review {
+    margin: 90px 0;
+}
+@media only screen and (max-width: 576px) {
+    .top-rated {
+        margin-top: 90px;
+        margin-bottom: 20px;
+    }
+
+    .most-liked {
+        margin: 50px 0;
+    }
+}
+
+.top-rated__list,
+.most-liked__list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.top-rated__list > li,
+.most-liked__list > li {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.top-rated__list img,
+.most-liked__list img {
+    width: 100px;
+    height: auto;
+    padding: 10px 20px 5px 0;
+}
+
+.rated-info {
+    padding-top: 20px;
+}
+
+.rated-info p {
+    margin-bottom: 10px;
+
+    color: #ff2a6b;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.rated-info h5 {
+    margin-bottom: 10px;
+    color: #474744;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.rated-info i {
+    font-size: 10px;
+}
+
+/* REVIEW */
+
+.review {
+    position: relative;
+    margin-top: 110px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 17px 29px rgba(0, 0, 0, 0.15);
+}
+
+.review > img {
+    width: 100%;
+    height: auto;
+}
+
+.review__text {
+    padding: 40px 40px;
+}
+.review__text > h5 {
+    padding-bottom: 10px;
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.review__text > span {
+    padding-bottom: 20px;
+
+    color: #ff2a6b;
+    font-size: 14px;
+}
+
+.review__text > p {
+    padding: 20px 0;
+
+    color: #838383;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.review__text > a {
+    color: #474744;
+    font-size: 12px;
+}
+
+.review__date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+
+    color: white;
+    background-color: #ff2a6b;
+    padding: 20px 30px;
+
+    font-size: 15px;
+    font-weight: lighter;
+
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+@media only screen and (max-width: 576px) {
+    .review {
+        margin-top: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+    .review {
+        margin: 0 10px 90px 10px;
+    }
+}
+.button-next {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 17px;
+    color: white;
+    background-color: #ff2a6b;
+}
+/* AUTHOR */
+
+.author-rated {
+    background-color: #fdc856;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.review-items-left,
+.review-items-right {
+    position: relative;
+
+    margin: 50px 25px;
+    background-color: white;
+
+    height: auto;
+    width: 520px;
+}
+
+.date-tag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+
+    color: white;
+    background-color: #ff2a6b;
+    padding: 20px 30px;
+
+    font-size: 13px;
+    font-weight: lighter;
+
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.latest-rated {
+    display: flex;
+}
+
+.latest-rated > img {
+    padding-right: 30px;
+    height: 150px;
+    width: auto;
+}
+
+.information {
+    display: inline-block;
+}
+
+.author {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    margin: 12px 0;
+}
+
+.author > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.author > p {
+    padding: 15px 0 0 10px;
+    font-size: 13px;
+    color: #474744;
+}
+
+@media only screen and (max-width: 576px) {
+    .review-items-left,
+    .review-items-right {
+        margin: auto 0;
+        background-color: white;
+        height: auto;
+        width: 100%;
+    }
+
+    .review-items-left {
+        margin-top: 80px;
+        margin-bottom: 15px;
+    }
+
+    .review-items-right {
+        margin-top: 15px;
+        margin-bottom: 80px;
+    }
+    .latest-rated {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .latest-rated > img {
+        height: auto;
+        width: 100%;
+    }
+
+    .information {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .information .rated-info {
+        text-align: center;
+    }
+
+    .information ul.rating {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+    .review-items-left,
+    .review-items-right {
+        margin: auto auto;
+        background-color: white;
+        height: auto;
+        width: 70%;
+    }
+
+    .review-items-left {
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .review-items-right {
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+
+    .top-rated {
+        padding-left: 10px;
+    }
+}

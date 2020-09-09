@@ -1,0 +1,92 @@
+/* SECTION ABOUT */
+
+.about-team {
+    margin: 80px 0;
+}
+
+.about_image {
+    width: 100%;
+}
+
+.intro__content {
+    margin: 50px 0;
+    padding-right: 15px;
+}
+
+.intro__content > h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.intro__content > p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #888888;
+    line-height: 30px;
+    margin-bottom: 50px;
+    padding-right: 10px;
+}
+
+.about-button {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background-color: #ff2a6b;
+    padding: 20px 0;
+    text-align: center;
+    max-width: 185px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+    .about-button {
+        margin: auto auto;
+    }
+
+    .intro__content > p {
+        text-align: center;
+    }
+
+    .intro__content > h2 {
+        text-align: center;
+        padding: 0 25px;
+    }
+}
+
+/* SECTION FACT */
+
+.fact-wrap {
+    background-color: #eff3f7;
+    width: 100%;
+    padding: 120px 0;
+}
+
+ul.fact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul.fact > li {
+    text-align: center;
+}
+
+ul.fact > li > img {
+    width: 25%;
+    padding-bottom: 25px;
+}
+
+ul.fact > li > h3 {
+    padding-bottom: 20px;
+    font-size: 42px;
+    font-weight: 600;
+    color: #474747;
+}
+
+ul.fact > li > p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #474747;
+}

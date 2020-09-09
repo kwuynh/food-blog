@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* SECTION BANNER */
+
+.banner {
+    background-image: url(/images/page-top-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    background-color: #ff2a6b;
+    border-radius: 5px;
+    padding: 20px 25px;
+    display: inline-block;
+    margin: 70px 0;
+
+    box-shadow: 0 90px 100px rgba(0, 0, 0, 0.4);
+
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .banner h1 {
+        font-size: 50px;
+    }
+}
+
+h2 {
+    color: #474744;
+}
+
+.slider {
+    margin-bottom: 20px;
+
+    width: 60px;
+    height: 5px;
+    background-color: #ff2a6b;
+
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}

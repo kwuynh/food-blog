@@ -1,0 +1,134 @@
+.footer {
+    background-image: url(/images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 60px 10px 70px;
+}
+
+footer .container {
+    width: 100%;
+}
+
+.footer__left {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer__left > a {
+    margin-bottom: 25px;
+}
+
+ul.footer__social {
+    display: flex;
+}
+
+ul.footer__social a {
+    color: #b8b8b8;
+    font-size: 14px;
+    padding-right: 30px;
+}
+
+ul.footer__social a:hover {
+    color: #ff2a6b;
+}
+
+/* LEFT */
+.footer__right {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.footer-menu > li {
+    margin-top: 25px;
+    padding-left: 30px;
+}
+
+.footer-menu a {
+    color: #444444;
+    font-size: 14px;
+}
+
+.footer-menu a:hover {
+    color: #ff2a6b;
+}
+
+.footer-menu > li > a.active {
+    color: #ff2a6b;
+    font-weight: 500;
+}
+.footer__right p.footer__text {
+    margin-top: 30px;
+    text-align: right;
+
+    font-size: 13px;
+    color: #838383;
+}
+
+.footer__right a.colorlib {
+    padding-top: 20px;
+    color: cornflowerblue;
+}
+
+@media only screen and (max-width: 576px) {
+    .footer__left {
+        align-items: center;
+    }
+
+    .footer__right {
+        align-items: center;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-left: -20px;
+    }
+
+    .footer-menu a.active {
+        font-weight: 600;
+    }
+
+    .footer-menu > li {
+        padding: 0 18px;
+    }
+
+    .footer__right p.footer__text {
+        text-align: center;
+        line-height: 2;
+        font-size: 14px;
+    }
+
+    .footer__text br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+    .footer__left {
+        margin-left: 50px;
+    }
+
+    .footer-menu {
+        margin-top: 10px;
+        justify-content: left;
+    }
+
+    .footer__right p.footer__text {
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .footer__text br {
+        display: none;
+    }
+}
